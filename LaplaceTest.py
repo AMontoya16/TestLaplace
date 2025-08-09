@@ -1,4 +1,4 @@
-from manim import * # type: ignore
+from manim import *  # type: ignore
 import math
 
 
@@ -65,6 +65,7 @@ class LaplaceTransformScene(Scene):
         )
 
         axes_label = Text("Zeros and poles diagram of H(s)", font_size=28).to_corner(UL)
+
 
         # Etiquetas personalizadas del eje y solo con j
         y_labels = {
