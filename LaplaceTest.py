@@ -1,5 +1,6 @@
-from manim import *
+from manim import * # type: ignore
 import math
+
 
 class LaplaceTransformScene(Scene):
     def construct(self):
@@ -70,10 +71,10 @@ class LaplaceTransformScene(Scene):
             -3: MathTex(r"-3j", font_size=28),
             -2: MathTex(r"-2j", font_size=28),
             -1: MathTex(r"-j", font_size=28),
-             0: MathTex(r"0", font_size=28),
-             1: MathTex(r"j", font_size=28),
-             2: MathTex(r"2j", font_size=28),
-             3: MathTex(r"3j", font_size=28)
+            0: MathTex(r"0", font_size=28),
+            1: MathTex(r"j", font_size=28),
+            2: MathTex(r"2j", font_size=28),
+            3: MathTex(r"3j", font_size=28)
         }
         for y_val, label in y_labels.items():
             label.next_to(axes.c2p(0, y_val), LEFT, buff=0.15)
